@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Navbar -->
+    <header class="fixed w-full bg-gray-800 shadow-lg z-50">
+        <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+            <h1 class="text-2xl font-bold">My Portfolio</h1>
+            <ul class="flex gap-6">
+                <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+                <li><a href="#skills" class="hover:text-yellow-400">Skills</a></li>
+                <li><a href="#projects" class="hover:text-yellow-400">Projects</a></li>
+                <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center p-8" data-aos="fade-up">
+        <h2 class="text-4xl font-bold">Hi, I'm <span class="text-yellow-400">Your Name</span></h2>
+        <p class="text-lg mt-4">Cybersecurity Enthusiast | SOC Analyst</p>
+        <a href="#contact" class="mt-6 px-6 py-3 bg-yellow-400 text-black font-bold rounded-lg hover:bg-yellow-300">Hire Me</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="max-w-6xl mx-auto p-8" data-aos="fade-right">
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p>Hello! I'm a passionate cybersecurity enthusiast with knowledge in SOC operations, networking, and threat analysis. I enjoy working with SIEM tools, analyzing logs, and identifying security threats.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-gray-800 p-8" data-aos="fade-left">
+        <h2 class="text-3xl font-bold mb-4 text-center">Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-4 bg-gray-700 rounded-lg">SIEM</div>
+            <div class="p-4 bg-gray-700 rounded-lg">IDS/IPS</div>
+            <div class="p-4 bg-gray-700 rounded-lg">Firewall</div>
+            <div class="p-4 bg-gray-700 rounded-lg">TCP/IP</div>
+            <div class="p-4 bg-gray-700 rounded-lg">Linux</div>
+            <div class="p-4 bg-gray-700 rounded-lg">Windows Security</div>
+            <div class="p-4 bg-gray-700 rounded-lg">EDR</div>
+            <div class="p-4 bg-gray-700 rounded-lg">Incident Response</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-6xl mx-auto p-8" data-aos="zoom-in">
+        <h2 class="text-3xl font-bold mb-4">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="p-4 bg-gray-800 rounded-lg">
+                <h3 class="text-xl font-bold">SOC Monitoring Lab</h3>
+                <p>Set up a mini SOC using Security Onion and Splunk to monitor network traffic and logs.</p>
+            </div>
+            <div class="p-4 bg-gray-800 rounded-lg">
+                <h3 class="text-xl font-bold">Threat Hunting Project</h3>
+                <p>Analyzed suspicious events using EDR logs and correlated with threat intelligence feeds.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-800 p-8" data-aos="fade-up">
+        <h2 class="text-3xl font-bold mb-4 text-center">Contact Me</h2>
+        <form name="contact" method="POST" data-netlify="true" class="max-w-lg mx-auto flex flex-col gap-4">
+            <input type="text" name="name" placeholder="Your Name" class="p-3 rounded-lg text-black" required>
+            <input type="email" name="email" placeholder="Your Email" class="p-3 rounded-lg text-black" required>
+            <textarea name="message" placeholder="Your Message" rows="5" class="p-3 rounded-lg text-black" required></textarea>
+            <button type="submit" class="px-6 py-3 bg-yellow-400 text-black font-bold rounded-lg hover:bg-yellow-300">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-center p-4 mt-8">
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
